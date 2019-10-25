@@ -173,17 +173,39 @@ img {
   justify-content: space-between;
   margin: 30px 0;
 }
+@media (max-width: 500px) {
+  .navigation-bar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .navigation-bar h2 {
   margin-left: 390px;
 }
+@media (max-width: 500px) {
+  .navigation-bar h2 {
+    margin-left: 180px;
+  }
+}
 .navigation-bar nav {
   margin-right: 410px;
+}
+@media (max-width: 500px) {
+  .navigation-bar nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .navigation-bar nav a {
   padding-left: 40px;
   text-decoration: none;
   color: black;
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .navigation-bar nav a {
+    width: 115px;
+  }
 }
 .footer {
   width: 100%;
@@ -203,6 +225,12 @@ img {
   flex-direction: column;
   margin-top: -1%;
 }
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .header .img-content {
   width: 70%;
   padding: 1%;
@@ -210,13 +238,32 @@ img {
   border-top: 2px dashed #C0C0C0;
   padding-top: 0px;
 }
+@media (max-width: 500px) {
+  .header .img-content {
+    width: 450px;
+    margin-left: -370px;
+    margin-top: -12px;
+  }
+}
 .header .text-content {
   margin-left: -4px;
+}
+@media (max-width: 500px) {
+  .header .text-content {
+    width: 450px;
+    margin-left: -365px;
+    margin-top: 12px;
+  }
 }
 .header .text-content p {
   width: 66%;
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .header .text-content p {
+    width: 430px;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -224,35 +271,88 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    margin-left: 20px;
+    width: 92.5%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 600px;
+    margin-left: 11px;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 450px;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    margin-left: 13px;
+    width: 92.5%;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 600px;
+    margin-left: 12px;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 95%;
+    margin-left: 20px;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination img {
+    width: 450px;
+    margin-left: -10px;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -260,7 +360,36 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+    margin-left: 60px;
+  }
+}
+.home .content-pick .destination .btn {
+  margin: 10px 1px;
+  padding: 5%;
+  text-align: center;
+  cursor: pointer;
+  width: 95%;
+  height: 55px;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: royalblue;
+  color: white;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: red;
+  transform: translateY(4px);
 }

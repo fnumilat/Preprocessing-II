@@ -1,1 +1,31 @@
 // Mixins in here
+.custom-btn(@bg-color, @color) {
+    margin: 10px 1px;
+    padding: 5%;
+    text-align: center;
+    cursor: pointer;
+    width: 85%;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: @bg-color;
+    color: @color;
+}
+
+.custom-mobile-btn(@bg-color, @color) {
+    margin: 10px 1px;
+    padding: 5%;
+    text-align: center;
+    cursor: pointer;
+    width: 95%;
+    height: 55px;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: @bg-color;
+    color: @color;
+
+    &:hover {
+        background-color: red;
+        transform: translateY(4px);
+    }
+}
