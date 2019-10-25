@@ -1,1 +1,40 @@
 // Navigation Styles here
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+
+    @media @mobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        margin-left: 390px;
+
+        @media @mobile {
+            margin-left: 180px;
+        }
+    }
+
+    nav {
+        margin-right: 410px;
+
+        @media @mobile {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        a {
+            padding-left: 40px;
+            text-decoration: none;
+            color: black;
+            font-size: 1.8rem;
+
+            @media @mobile {
+                width: 115px;
+            }
+        }
+    }
+}
